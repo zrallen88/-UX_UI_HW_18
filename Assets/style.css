@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+    background: #DAE2E8;
+    font-family: sans-serif;
+}
+.box {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding:10px 0;
+}
+/* NAV*/
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+}
+
+.name {
+    justify-content: left;
+    align-items: center;
+    font-size: 32px;
+    font-family: Roboto sans-serif;
+    flex-grow: 1;
+    padding: 20px;
+}
+
+.logo { 
+    justify-content: center;
+    align-content: center;
+    padding: 10px;
+    flex: 2;
+}
+
+.nav li {
+    display: inline-block;
+    margin-left: 15px;
+    padding-top: 25px;
+    text-transform: uppercase;
+    list-style-type: none;
+    font-size: 14px;
+    flex-grow: 1;
+    flex-flow: row;
+}
+
+/*portfolio*/
+
+.content {
+   display: grid; 
+   grid-template-columns: 700px 500px;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "KBYG DIY"
+    "DIY";
+ 
+}
+
+.KBYG {
+    
+    height: 50%;
+}
+.DIY {
+    background-color: rebeccapurple;
+    height: 50%;
+}
+
+
+.footer li {
+    display: inline-flex;
+    list-style-type: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    justify-items: center;
+    align-items: center;
+    padding: 20px;
+}
