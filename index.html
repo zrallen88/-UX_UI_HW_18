@@ -2,6 +2,7 @@
 <html>
     <head>
         <title>Zach Allen Portfolio</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link href="Assets/style.css" rel="stylesheet" type="text/css">
     </head>
     <body>
@@ -9,39 +10,41 @@
 <!--header-->
 
 <header>
-    <div class="container">
-        <div class="name">
-            <p>Zach Allen</p>
-        </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary>
+        <a class="navbar-brand" href="#" style="color:#203B31">Zach Allen</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
         <div class="logo">
-            <img src="Assets/Images/ZA_Logo.png" alt="logo" class="logo">
+            <img src="Assets/Images/ZA_Logo.png">
         </div>
-       
-        <nav class="nav">
-             <ul>
-                <li>About</li>
-                <li>Portfolio</li>
-                <li>Resume</li>
-                <li>Contact</li>
-            </ul>
-        </nav>
-
-    </div>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup";>
+          <div class="navbar-nav">
+            <a class="nav-item nav-link active" style="color:#203B31" href="#">Portfolio <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" href="#" style="color:#203B31">About</a>
+            <a class="nav-item nav-link" href="#" style="color:#203B31">Contact</a>
+            <a class="nav-item nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+          </div>
+        </div>
+      </nav>
 </header>
 
 <!--body-->
 <section class="content">
     
     <div class="KBYG">
-        <img src="Assets/Images/KBGY_p.png" class="kbyg_img">
+        <img src="Assets/Images/KBGY_p.png" class="kbyg_img img">
+        <div class="overlay">
+            <div class="text">Know Before You Go></div>
+        </div>
     </div>
 
     <div class="DIY">
-        <img src="Assets/Images/DIY_p.png" class="diy_img">
+        <img src="Assets/Images/DIY_p.png" class="diy_img img">
     </div>
 
-    <div class="DIY">
-        <img src="Assets/Images/DIY_p.png" class=diy_img>
+    <div class="ramble">
+        <img src="Assets/Images/DIY_p.png" class="ramble_img img">
     </div>
     
 </section>

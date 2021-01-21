@@ -1,7 +1,9 @@
 body {
-    margin: 0;
+    margin: 0 auto;
     background: #DAE2E8;
     font-family: sans-serif;
+    max-width: 1280px;
+    
 }
 .box {
     max-width: 1280px;
@@ -10,10 +12,11 @@ body {
 }
 /* NAV*/
 
-.container {
+.nav {
     display: flex;
     justify-content: space-around;
     align-content: center;
+    background-color: #DAE2E8;
 }
 
 .name {
@@ -26,45 +29,86 @@ body {
 }
 
 .logo { 
-    justify-content: center;
-    align-content: center;
-    padding: 10px;
-    flex: 2;
+    margin-left: 48%;
+    margin-right: 25%;
+    
 }
 
-.nav li {
+.nav {
     display: inline-block;
     margin-left: 15px;
     padding-top: 25px;
+    margin-right: 10px;
     text-transform: uppercase;
-    list-style-type: none;
+    list-style-type: none ;
     font-size: 14px;
-    flex-grow: 1;
     flex-flow: row;
+    background-color: aquamarine;
+  
 }
 
 /*portfolio*/
 
 .content {
    display: grid; 
-   grid-template-columns: 700px 500px;
+   grid-template-columns: 700px 700px;
     grid-template-rows: auto;
     grid-template-areas: 
     "KBYG DIY"
-    "DIY";
+    "DIY DIY";
+    margin: 0 auto;
+    
  
 }
-
 .KBYG {
+    background: #7B8288;
+}
+.kbyg_img{
+    display: block;
+    width: 100%;
+    height: auto;
+    background-image: url(/Assets/Images/KBGY_hover.png);
+    opacity: 1;
+    transition: opacity .25s ease-in;
     
-    height: 50%;
+}
+.kbyg_img:hover {
+    background-image: url(/Assets/Images/KBGY_hover.png);
+    opacity: .1;
+    cursor: pointer;
 }
 .DIY {
-    background-color: rebeccapurple;
-    height: 50%;
+    background: #7B8288;
 }
-
-
+.diy_img{
+    display: block;
+    width: 100%;
+    height: auto;
+    opacity: 1;
+    transition: opacity .25s ease-in;
+}
+.diy_img:hover {
+    color: palevioletred;
+    opacity: .1;
+    cursor: pointer;
+}
+.ramble {
+    background: #7B8288;
+}
+.ramble_img{
+    display: block;
+    width: 100%;
+    height: auto;
+    opacity: 1;
+    transition: opacity .25s ease-in;
+}
+.ramble_img:hover {
+    opacity: .1;
+    cursor: pointer;
+}
+.ramble_img {
+    justify-content: right;
+}
 .footer li {
     display: inline-flex;
     list-style-type: none;
@@ -73,4 +117,5 @@ body {
     justify-items: center;
     align-items: center;
     padding: 20px;
+    
 }
