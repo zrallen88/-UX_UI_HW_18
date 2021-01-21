@@ -119,3 +119,8 @@ body {
     padding: 20px;
     
 }
+/*About Me*/
+
+.resume {
+    list-style: square;
+}
