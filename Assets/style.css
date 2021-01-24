@@ -1,55 +1,41 @@
 body {
-    margin: 0 auto;
     background: #DAE2E8;
     font-family: sans-serif;
-    max-width: 1280px;
-    
-}
-.box {
-    max-width: 1280px;
-    margin: 0 auto;
-    padding:10px 0;
 }
 /* NAV*/
 
-.nav {
-    display: flex;
-    justify-content: space-around;
-    align-content: center;
-    background-color: #DAE2E8;
-}
+/* General */
+.customNav {
+    position: fixed;
+    width: 100%;
+    background-color: transparent !important;
+    background-size: cover;
+    z-index: 10;
+  }
+  .navbar-nav {
+    margin-left: auto;
+    margin-right: 0 !important;
+  }
+  .navbar-brand img {
+    padding-right: 15px;
+    width: 65px;
+  }
+  .nav-item {
+    margin: 0px 15px;
 
-.name {
-    justify-content: left;
-    align-items: center;
+  }
+ 
+  /* Navigation links */
+  .customNav a {
+    color: #203B31 !important;
     font-size: 32px;
-    font-family: Roboto sans-serif;
-    flex-grow: 1;
-    padding: 20px;
-}
-
-.logo { 
-    margin-left: 48%;
-    margin-right: 25%;
-    
-}
-
-.nav {
-    display: inline-block;
-    margin-left: 15px;
-    padding-top: 25px;
-    margin-right: 10px;
-    text-transform: uppercase;
-    list-style-type: none ;
-    font-size: 14px;
-    flex-flow: row;
-    background-color: aquamarine;
-  
-}
-
+  }
+  .navCTA {
+    font-size: 15px;
+  }
 /*portfolio*/
 
-.content {
+.container {
    display: grid; 
    grid-template-columns: 700px 700px;
     grid-template-rows: auto;
@@ -57,6 +43,7 @@ body {
     "KBYG DIY"
     "DIY DIY";
     margin: 0 auto;
+    padding-top: 120px;
     
  
 }
@@ -70,6 +57,7 @@ body {
     background-image: url(/Assets/Images/KBGY_hover.png);
     opacity: 1;
     transition: opacity .25s ease-in;
+  
     
 }
 .kbyg_img:hover {
